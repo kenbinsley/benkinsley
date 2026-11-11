@@ -14,4 +14,22 @@
             }
          }
       }
-      publiiDetectLoadedImages();</script></body></html>
+      publiiDetectLoadedImages();</script><script>document.addEventListener("DOMContentLoaded", function() {
+    // 1. Replace '.footer__social' with your theme's social wrapper class if different
+    const socialBox = document.querySelector('.footer__social'); 
+    
+    if (socialBox) {
+      socialBox.insertAdjacentHTML('beforeend', `
+        <a href="https://soundcloud.com/kenbinsley" aria-label="SoundCloud" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M1.175 12.222c-.056 0-.103.04-.112.094l-.508 3.128.508 3.068c.009.054.056.094.112.094.054 0 .101-.04.111-.094l.576-3.068-.576-3.128c-.01-.054-.057-.094-.111-.094zm1.912-.674c-.068 0-.124.048-.136.114l-.451 3.802.451 3.719c.012.066.068.114.136.114.066 0 .122-.048.134-.114l.511-3.719-.511-3.802c-.012-.066-.068-.114-.134-.114zm1.933-.922c-.08 0-.146.058-.159.137l-.394 4.724.394 4.588c.013.079.079.137.159.137.078 0 .144-.058.157-.137l.446-4.588-.446-4.724c-.013-.079-.079-.137-.157-.137zm1.954-.779c-.093 0-.168.067-.182.159l-.337 5.503.337 5.344c.014.092.089.159.182.159.091 0 .166-.067.18-.159l.381-5.344-.381-5.503c-.014-.092-.089-.159-.18-.159zm1.976-.605c-.105 0-.191.077-.206.181l-.28 6.108.28 5.927c.015.104.101.181.206.181.103 0 .189-.077.204-.181l.317-5.927-.317-6.108c-.015-.104-.101-.181-.204-.181zm1.997-.369c-.117 0-.213.086-.229.203l-.223 6.477.223 6.274c.016.117.112.203.229.203.115 0 .211-.086.227-.203l.252-6.274-.252-6.477c-.016-.117-.112-.203-.227-.203zm10.422 4.301c-.41 0-.799.086-1.152.238-.237-2.679-2.487-4.782-5.229-4.782-.672 0-1.318.128-1.911.359-.226.088-.286.178-.286.354v10.036c0 .184.142.337.324.355h8.254c1.45 0 2.625-1.175 2.625-2.625s-1.175-2.625-2.625-2.625z"/>
+          </svg>
+        </a>
+        <a href="https://benkinsley.bandcamp.com/album/ultra-infra-field-studies" aria-label="Bandcamp" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/>
+          </svg>
+        </a>
+      `);
+    }
+  });</script></body></html>
