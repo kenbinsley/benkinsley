@@ -32,4 +32,9 @@
         </a>
       `);
     }
+  });</script><script>document.querySelectorAll('.footer__social a, footer a[aria-label]').forEach(link => {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
   });</script></body></html>
